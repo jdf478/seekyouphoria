@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You‑Phoria — Aurum Haven Medical</title>
-  <meta name="description" content="You‑Phoria: Direct Primary Care + Aesthetics combining resilience with science at Aurum Haven Medical.">
+  <title>You-Phoria — Aurum Haven Medical</title>
+  <meta name="description" content="You-Phoria: Direct Primary Care + Aesthetics combining resilience with science at Aurum Haven Medical.">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -13,69 +13,80 @@
       --gold-dark: #c19f2b;
       --cerulean: #5FBED4;
     }
-    /* Softened gradient */
-    body {
-      background: linear-gradient(to bottom right, #2c3e50, #34495e);
+    /* Organic shape overlay */
+    .bg-organic {
+      background-image: url('/path-to-organic-shape.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.05;
     }
+    /* Fade-in-up animation */
+    @keyframes fadeInUp {0% {opacity: 0; transform: translateY(20px);} 100% {opacity: 1; transform: translateY(0);} }
+    .animate-fade-in { animation: fadeInUp 1s ease-out both; }
+    /* Slow pulse for heading glow */
+    @keyframes pulseSlow {0%,100% {opacity: 1;} 50% {opacity: 0.88;} }
+    .animate-pulse-slow { animation: pulseSlow 5s ease-in-out infinite; }
   </style>
 </head>
-<body class="relative min-h-screen text-gray-100 font-sans overflow-x-hidden">
+<body class="relative min-h-screen bg-fixed bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-gray-100 font-sans overflow-x-hidden">
+  <!-- Organic Overlay -->
+  <div class="absolute inset-0 bg-organic pointer-events-none"></div>
 
   <!-- Hero -->
-  <section class="flex flex-col items-center justify-center text-center px-6 py-40 max-w-2xl mx-auto">
-    <h1 class="text-5xl md:text-6xl font-serif text-[var(--gold)] mb-4">You‑Phoria</h1>
-    <p class="text-lg text-gray-300 leading-relaxed mb-6">Sanctuary · Science · Resilience — where we strive for You‑Phoria.</p>
-    <a href="#how-it-works" class="px-10 py-3 bg-[var(--gold)] text-gray-900 font-medium rounded-md hover:bg-[var(--gold-dark)] transition">Seek Your You‑Phoria</a>
-  </section>
+  <section class="flex flex-col items-center justify-center text-center px-8 py-32 space-y-6 max-w-3xl mx-auto">
+    <h1 class="text-6xl md:text-7xl font-serif text-[var(--gold)] drop-shadow-xl animate-pulse-slow">You-Phoria</h1>
+    <p class="text-lg md:text-xl text-gray-300 leading-relaxed animate-fade-in">Sanctuary · Science · Resilience — where we strive for You-Phoria.</p>
+    <a href="#how-it-works" class="inline-block mt-4 px-12 py-4 bg-[var(--gold)] text-slate-900 font-semibold rounded-lg shadow-lg hover:bg-[var(--gold-dark)] transition animate-fade-in">Seek Your You-Phoria</a>
 
-  <!-- How It Works -->
-  <section id="how-it-works" class="px-6 py-20 max-w-3xl mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+    <!-- How It Works -->
+    <div id="how-it-works" class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 w-full animate-fade-in">
       <div class="text-center">
-        <h4 class="text-[var(--cerulean)] font-semibold mb-2">Assess</h4>
+        <h4 class="text-[var(--cerulean)] font-semibold">Assess</h4>
         <p class="text-gray-300 text-sm">Intake breathing protocol</p>
       </div>
       <div class="text-center">
-        <h4 class="text-[var(--cerulean)] font-semibold mb-2">Treat</h4>
-        <p class="text-gray-300 text-sm">GAHT, GLP‑1a, Botox</p>
+        <h4 class="text-[var(--cerulean)] font-semibold">Treat</h4>
+        <p class="text-gray-300 text-sm">GAHT, GLP-1a, Botox</p>
       </div>
       <div class="text-center">
-        <h4 class="text-[var(--cerulean)] font-semibold mb-2">Support</h4>
+        <h4 class="text-[var(--cerulean)] font-semibold">Support</h4>
         <p class="text-gray-300 text-sm">Sensory grounding resets</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonial -->
-  <section id="impact" class="px-6 py-20 bg-gray-800 bg-opacity-50">
-    <div class="max-w-2xl mx-auto text-center">
-      <p class="text-xl text-[var(--gold)] mb-4">“As always, Dr. Fernandez was great today. He answered my questions before I even got the chance to ask them. I feel secure in his care.”</p>
-      <p class="text-gray-300 italic mb-2">— Press Ganey Patient</p>
-      <p class="text-sm text-gray-500">5.0 ★★★★★ (105 ratings)</p>
+  <!-- Press Ganey Testimonial -->
+  <section id="impact" class="py-24 px-8 bg-indigo-900 bg-opacity-60">
+    <div class="max-w-3xl mx-auto text-center space-y-4">
+      <p class="text-2xl font-serif text-[var(--gold)] leading-snug animate-fade-in">
+        “As always, Dr. Fernandez was great today. I had a pre-op appointment with him and he went through everything required with me with clarity. He answered my questions before I even got the chance to ask them. I feel secure in his care—his kind and easy-going demeanor definitely contribute to that, alongside his knowledge and expertise in trans healthcare.”
+      </p>
+      <p class="text-gray-300 italic animate-fade-in">— Press Ganey Patient</p>
+      <p class="text-sm text-gray-400 animate-fade-in">5.0 ★★★★★ (105 ratings)</p>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="px-6 py-20 max-w-5xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="bg-gray-800 bg-opacity-40 rounded-lg p-6">
-        <h3 class="text-2xl font-serif text-[var(--gold)] mb-2">Metabolic Repair</h3>
-        <p class="text-gray-300">Precision-backed metabolic care tailored to you.</p>
+  <section id="services" class="py-32 space-y-16 px-8">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border-2 border-[var(--gold)] transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-[var(--gold)] drop-shadow">Metabolic Repair</h3>
+        <p class="text-gray-300 leading-relaxed">Crafted metabolic journeys merging clinical precision with holistic renewal.</p>
       </div>
-      <div class="bg-gray-800 bg-opacity-40 rounded-lg p-6">
-        <h3 class="text-2xl font-serif text-[var(--gold)] mb-2">Gender Harmony</h3>
-        <p class="text-gray-300">Trauma-informed hormone therapy with personalized pacing.</p>
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border-2 border-[var(--gold)] transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-[var(--gold)] drop-shadow">Gender Harmony</h3>
+        <p class="text-gray-300 leading-relaxed">Trauma-informed hormone care, paced by you, supported by evidence.</p>
       </div>
-      <div class="bg-gray-800 bg-opacity-40 rounded-lg p-6">
-        <h3 class="text-2xl font-serif text-[var(--gold)] mb-2">Facial Harmony</h3>
-        <p class="text-gray-300">Subtle aesthetics that empower identity and community.</p>
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border-2 border-[var(--gold)] transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-[var(--gold)] drop-shadow">Facial Harmony</h3>
+        <p class="text-gray-300 leading-relaxed">Precision esthetic rituals that empower identity and community.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="px-6 py-12 text-center text-sm text-gray-500">
-    <p>Disclaimer: You‑Phoria at Aurum Haven Medical is not affiliated with UCLA Health.</p>
+  <footer class="py-12 text-center text-sm text-gray-400 bg-indigo-900">
+    <p class="text-[var(--gold)]">Disclaimer: You-Phoria at Aurum Haven Medical is not affiliated with UCLA Health. Dr. Fernandez remains employed at UCLA Health.</p>
   </footer>
 </body>
 </html>
