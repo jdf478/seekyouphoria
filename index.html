@@ -8,32 +8,55 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Subtle noise overlay */
-    .bg-noise { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity="0.02"><rect width="100" height="100" fill="black"/></svg>'); }
+    /* Organic shape overlay (replace URL with actual asset) */
+    .bg-organic {
+      background-image: url('/path-to-organic-shape.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.05;
+    }
     /* Fade-in-up animation */
     @keyframes fadeInUp {0% {opacity: 0; transform: translateY(20px);} 100% {opacity: 1; transform: translateY(0);} }
-    .animate-fade-in { animation: fadeInUp 1.2s ease-out both; }
+    .animate-fade-in { animation: fadeInUp 1s ease-out both; }
     /* Slow pulse for heading glow */
-    @keyframes pulseSlow {0%,100% {opacity: 1;} 50% {opacity: 0.85;} }
-    .animate-pulse-slow { animation: pulseSlow 4s ease-in-out infinite; }
+    @keyframes pulseSlow {0%,100% {opacity: 1;} 50% {opacity: 0.88;} }
+    .animate-pulse-slow { animation: pulseSlow 5s ease-in-out infinite; }
   </style>
 </head>
 <body class="relative min-h-screen bg-fixed bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-800 text-gray-100 font-sans overflow-x-hidden">
-  <!-- Noise Overlay -->
-  <div class="absolute inset-0 bg-noise pointer-events-none"></div>
+  <!-- Organic Overlay -->
+  <div class="absolute inset-0 bg-organic pointer-events-none"></div>
 
   <!-- Hero -->
-  <section class="flex flex-col items-center justify-center text-center px-8 py-32 space-y-6">
+  <section class="flex flex-col items-center justify-center text-center px-8 py-32 space-y-8 max-w-3xl mx-auto">
     <h1 class="text-6xl md:text-7xl font-serif text-amber-300 drop-shadow-xl animate-pulse-slow">You‑Phoria</h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-2xl animate-fade-in">A sanctuary where resilience meets science.</p>
-    <p class="text-sm tracking-wider text-gray-400 animate-fade-in">Sanctuary * Science * Resilience</p>
+    <p class="text-lg md:text-xl text-gray-300 leading-relaxed animate-fade-in">A sanctuary where resilience meets science.</p>
+    <p class="text-sm tracking-widest text-gray-400 animate-fade-in">Sanctuary · Science · Resilience</p>
     <p class="italic text-amber-200 animate-fade-in">Where we strive for You‑Phoria</p>
-    <ul class="list-disc list-inside text-gray-300 space-y-1 max-w-md animate-fade-in">
-      <li>Your body autonomy</li>
-      <li>Your chronic illness wins</li>
-      <li>Your gender joy</li>
-    </ul>
-    <a href="#services" class="inline-block mt-4 px-10 py-4 bg-amber-500 text-slate-900 font-semibold rounded-lg shadow-lg hover:bg-amber-400 transition animate-fade-in">Discover the Philosophy</a>
+    <div class="w-full space-y-6 text-left animate-fade-in">
+      <div>
+        <h4 class="text-amber-200 font-semibold">Your Body Autonomy</h4>
+        <p class="text-gray-300 leading-snug">Choose the pace, the space, the protocol—always by you.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-200 font-semibold">Your Chronic Illness Wins</h4>
+        <p class="text-gray-300 leading-snug">Every protocol honors your energy and nurtures your well-being.</p>
+      </div>
+      <div>
+        <h4 class="text-amber-200 font-semibold">Your Gender Joy</h4>
+        <p class="text-gray-300 leading-snug">Celebrate your identity in a space crafted for safety and support.</p>
+      </div>
+    </div>
+    <a href="#services" class="inline-block mt-4 px-12 py-4 bg-amber-500 text-slate-900 font-semibold rounded-lg shadow-lg hover:bg-amber-400 transition animate-fade-in">Seek Your You‑Phoria</a>
+  </section>
+
+  <!-- Impact/Testimonial -->
+  <section id="impact" class="py-24 px-8 bg-indigo-900 bg-opacity-60">
+    <div class="max-w-3xl mx-auto text-center space-y-4">
+      <p class="text-2xl font-serif text-amber-200 leading-snug animate-fade-in">“You‑Phoria transformed my journey—thank you for honoring my story.”</p>
+      <p class="text-gray-300 italic animate-fade-in">— A You‑Phoria Member</p>
+      <p class="text-sm text-gray-400 animate-fade-in">100% of aesthetic profits fund gender-affirming memberships.</p>
+    </div>
   </section>
 
   <!-- Services -->
