@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aurum YOU-Phoria</title>
+  <meta name="description" content="A sanctuary where Kentucky resilience meets West Hollywood innovation—sensory-integrated, trauma-informed care with academic rigor."/>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle floating radial glow */
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.02); }
+    }
+    /* Gold shimmer text */
+    @keyframes shimmer {
+      0% { background-position: -150%; }
+      100% { background-position: 150%; }
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,223,0,0.12), transparent 70%);
+      animation: float 15s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .gold-shard {
+      background: linear-gradient(90deg, rgba(255,223,0,0.4), rgba(255,215,0,0.8), rgba(255,223,0,0.4));
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 5s linear infinite;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-100 bg-gradient-to-b from-indigo-900 via-sky-800 to-indigo-700">
+  <!-- Hero Section -->
+  <section id="hero" class="relative flex items-center justify-center text-center h-screen px-6">
+    <div class="relative z-10">
+      <h1 class="text-6xl md:text-7xl font-extrabold gold-shard">Aurum YOU-Phoria</h1>
+      <p class="mt-4 text-xl max-w-2xl mx-auto">A sanctuary where Kentucky resilience meets West Hollywood innovation—sen​sory-integrated, trauma-informed care with academic rigor.</p>
+      <a href="#contact" class="mt-8 inline-block px-8 py-4 bg-amber-400 text-indigo-900 font-semibold rounded-full hover:scale-105 transform transition">Join Our Waitlist</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 px-6 bg-indigo-800 bg-opacity-90">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div class="p-8 bg-indigo-700 bg-opacity-60 rounded-3xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold mb-2 text-amber-300">Metabolic Repair Journey</h3>
+        <p class="mb-4">Science-led weight and metabolic care—honoring your body’s unique story.</p>
+        <span class="font-semibold">6-month program</span>
+      </div>
+      <div class="p-8 bg-indigo-700 bg-opacity-60 rounded-3xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold mb-2 text-amber-300">Gender Harmony Path</h3>
+        <p class="mb-4">Trauma-informed hormone care where you set the pace.</p>
+        <span class="font-semibold">Ongoing care</span>
+      </div>
+      <div class="p-8 bg-indigo-700 bg-opacity-60 rounded-3xl shadow-lg transform hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold mb-2 text-amber-300">Facial Harmony Series</h3>
+        <p class="mb-4">Subtle enhancements aligned with your identity goals.</p>
+        <span class="font-semibold">3-session series</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4 text-amber-300">Our Sanctuary</h2>
+      <p class="mb-6">Where Kentucky resilience meets West Hollywood innovation—sensory-integrated, trauma-informed care with academic rigor.</p>
+      <p class="text-gray-400">100% of aesthetic profits subsidize gender-affirming memberships. Max 8 patients per day. No clinical Wednesdays.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="py-16 px-6 bg-indigo-900">
+    <div class="max-w-md mx-auto text-center">
+      <h4 class="text-2xl font-semibold mb-4">Stay Informed</h4>
+      <p class="mb-6 text-gray-400">Sign up for updates and early access.</p>
+      <form class="flex flex-col sm:flex-row gap-4">
+        <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 rounded-full text-indigo-900" />
+        <button type="submit" class="px-6 py-3 bg-amber-500 text-indigo-900 font-semibold rounded-full hover:scale-105 transition">Sign Up</button>
+      </form>
+      <p class="mt-8 text-xs text-gray-500">Disclaimer: Aurum YOU-Phoria is not affiliated with UCLA Health. Dr. Fernandez remains employed at UCLA Health.</p>
+    </div>
+  </footer>
+</body>
+</html>
