@@ -1,0 +1,395 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Seek You-Phoria | Sanctuary Coming Soon</title>\
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css"> <!-- Replace with real Typekit ID -->\
+    <style>\
+        :root \{\
+            --clay: #e3c8b0;\
+            --linen: #f7f0e8;\
+            --ink: #2a2b2e;\
+            --ochre: #c77b30;\
+            --sage: #8a9b8c;\
+            --slate: #6b7c8d;\
+        \}\
+        \
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+        \
+        @font-face \{\
+            font-family: 'HandType';\
+            src: url('https://fonts.gstatic.com/s/cormorantgaramond/v10/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtL.woff2') format('woff2');\
+            font-weight: 400;\
+            font-style: italic;\
+        \}\
+        \
+        body \{\
+            font-family: 'ivypresto-display', serif;\
+            background-color: var(--linen);\
+            color: var(--ink);\
+            min-height: 100vh;\
+            display: flex;\
+            flex-direction: column;\
+            align-items: center;\
+            justify-content: center;\
+            padding: 20px;\
+            position: relative;\
+            overflow-x: hidden;\
+            background-image: \
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e3c8b0' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E"),\
+                linear-gradient(to bottom, var(--linen), #f5ede4);\
+            background-attachment: fixed;\
+        \}\
+        \
+        .paper-texture \{\
+            position: fixed;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");\
+            opacity: 0.4;\
+            pointer-events: none;\
+            z-index: -1;\
+        \}\
+        \
+        .container \{\
+            max-width: 900px;\
+            width: 100%;\
+            background: var(--linen);\
+            padding: 60px 50px;\
+            text-align: center;\
+            position: relative;\
+            margin: 20px;\
+            box-shadow: \
+                0 0 0 1px rgba(0,0,0,0.03),\
+                0 3px 20px rgba(0,0,0,0.03);\
+            border: 1px solid rgba(0,0,0,0.08);\
+        \}\
+        \
+        .handwritten \{\
+            font-family: 'HandType', serif;\
+            font-style: italic;\
+            font-weight: 400;\
+        \}\
+        \
+        .logo-container \{\
+            margin: 0 auto 40px;\
+            width: 120px;\
+            height: 120px;\
+            position: relative;\
+        \}\
+        \
+        .logo \{\
+            width: 100%;\
+            height: 100%;\
+            position: relative;\
+        \}\
+        \
+        .logo-circle \{\
+            position: absolute;\
+            top: 0;\
+            left: 0;\
+            width: 100%;\
+            height: 100%;\
+            border-radius: 50%;\
+            border: 1px solid var(--ink);\
+            opacity: 0.2;\
+        \}\
+        \
+        .logo-inner \{\
+            position: absolute;\
+            top: 50%;\
+            left: 50%;\
+            transform: translate(-50%, -50%);\
+            font-size: 60px;\
+            color: var(--ochre);\
+            font-family: 'ivypresto-display', serif;\
+            font-weight: 400;\
+            line-height: 1;\
+        \}\
+        \
+        h1 \{\
+            font-weight: 400;\
+            font-size: 3.5rem;\
+            color: var(--ink);\
+            margin-bottom: 15px;\
+            letter-spacing: -1px;\
+            line-height: 1.1;\
+        \}\
+        \
+        h1 .phoria \{\
+            color: var(--ochre);\
+            position: relative;\
+            display: inline-block;\
+        \}\
+        \
+        h1 .phoria::after \{\
+            content: "";\
+            position: absolute;\
+            bottom: 8px;\
+            left: 0;\
+            width: 100%;\
+            height: 1px;\
+            background: currentColor;\
+            opacity: 0.4;\
+        \}\
+        \
+        .subtitle \{\
+            font-size: 1.4rem;\
+            line-height: 1.6;\
+            max-width: 600px;\
+            margin: 0 auto 40px;\
+            color: var(--slate);\
+            font-weight: 400;\
+        \}\
+        \
+        .divider \{\
+            width: 80px;\
+            height: 1px;\
+            background: var(--ink);\
+            opacity: 0.1;\
+            margin: 40px auto;\
+        \}\
+        \
+        .resource-box \{\
+            background: rgba(255,255,255,0.6);\
+            padding: 40px 30px;\
+            margin: 40px 0;\
+            position: relative;\
+            border: 1px solid rgba(0,0,0,0.05);\
+        \}\
+        \
+        .resource-title \{\
+            font-size: 1.3rem;\
+            color: var(--ink);\
+            margin-bottom: 20px;\
+            letter-spacing: 1px;\
+            text-transform: uppercase;\
+            font-weight: 400;\
+            opacity: 0.7;\
+        \}\
+        \
+        .resource-description \{\
+            font-size: 1.8rem;\
+            margin-bottom: 35px;\
+            line-height: 1.4;\
+            color: var(--ink);\
+            max-width: 500px;\
+            margin-left: auto;\
+            margin-right: auto;\
+            font-weight: 400;\
+        \}\
+        \
+        .btn \{\
+            background: transparent;\
+            border: 1px solid var(--ochre);\
+            color: var(--ochre);\
+            padding: 12px 35px;\
+            font-size: 1.1rem;\
+            cursor: pointer;\
+            transition: all 0.3s ease;\
+            font-family: 'ivypresto-display', serif;\
+            font-weight: 400;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+        \
+        .btn::before \{\
+            content: "";\
+            position: absolute;\
+            top: 0;\
+            left: 0;\
+            width: 0%;\
+            height: 100%;\
+            background: var(--ochre);\
+            transition: all 0.4s ease;\
+            z-index: -1;\
+        \}\
+        \
+        .btn:hover \{\
+            color: var(--linen);\
+        \}\
+        \
+        .btn:hover::before \{\
+            width: 100%;\
+        \}\
+        \
+        .disclaimer \{\
+            padding: 25px 0 10px;\
+            text-align: center;\
+            font-size: 0.9rem;\
+            color: var(--slate);\
+            position: relative;\
+            max-width: 600px;\
+            margin: 40px auto 0;\
+            font-weight: 300;\
+        \}\
+        \
+        .disclaimer::before \{\
+            content: "";\
+            position: absolute;\
+            top: 0;\
+            left: 50%;\
+            transform: translateX(-50%);\
+            width: 40px;\
+            height: 1px;\
+            background: var(--ink);\
+            opacity: 0.1;\
+        \}\
+        \
+        footer \{\
+            margin-top: 40px;\
+            text-align: center;\
+            font-size: 0.9rem;\
+            color: var(--slate);\
+            width: 100%;\
+            max-width: 800px;\
+            padding: 20px 0;\
+        \}\
+        \
+        footer a \{\
+            color: var(--ochre);\
+            text-decoration: none;\
+            position: relative;\
+        \}\
+        \
+        footer a::after \{\
+            content: "";\
+            position: absolute;\
+            bottom: -1px;\
+            left: 0;\
+            width: 100%;\
+            height: 1px;\
+            background: currentColor;\
+            opacity: 0.3;\
+            transition: opacity 0.3s ease;\
+        \}\
+        \
+        footer a:hover::after \{\
+            opacity: 1;\
+        \}\
+        \
+        @media (max-width: 768px) \{\
+            .container \{\
+                padding: 40px 30px;\
+            \}\
+            \
+            h1 \{\
+                font-size: 2.8rem;\
+            \}\
+            \
+            .subtitle \{\
+                font-size: 1.2rem;\
+            \}\
+            \
+            .resource-description \{\
+                font-size: 1.6rem;\
+            \}\
+        \}\
+        \
+        @media (max-width: 480px) \{\
+            .container \{\
+                padding: 30px 20px;\
+            \}\
+            \
+            h1 \{\
+                font-size: 2.3rem;\
+            \}\
+            \
+            .subtitle \{\
+                font-size: 1.1rem;\
+            \}\
+            \
+            .resource-description \{\
+                font-size: 1.4rem;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="paper-texture"></div>\
+    \
+    <div class="container">\
+        <!-- Logo -->\
+        <div class="logo-container">\
+            <div class="logo">\
+                <div class="logo-circle"></div>\
+                <div class="logo-inner">Y</div>\
+            </div>\
+        </div>\
+        \
+        <h1>Seek <span class="phoria">You-Phoria</span></h1>\
+        <p class="subtitle handwritten">\
+            A sanctuary for nervous system healing, currently being crafted with intention\
+        </p>\
+        \
+        <div class="divider"></div>\
+        \
+        <!-- UCLA-Compliant Educational Resource -->\
+        <div class="resource-box">\
+            <div class="resource-title">Preliminary Offering</div>\
+            <p class="resource-description handwritten">\
+                "Notes on Breathing Through<br>Medical Trauma"\
+            </p>\
+            <button class="btn">Request Manuscript</button>\
+        </div>\
+        \
+        <!-- Legal Disclaimers -->\
+        <div class="disclaimer">\
+            <p><em>This space is in development. No clinical services are offered. This represents personal scholarly work separate from institutional affiliations.</em></p>\
+        </div>\
+    </div>\
+    \
+    <footer>\
+        <p>\'a9 2024 | A sanctuary initiative</p>\
+    </footer>\
+\
+    <script>\
+        document.querySelector('.btn').addEventListener('click', function() \{\
+            const message = "Your request has been noted. When the sanctuary doors open, this manuscript will be waiting for you.";\
+            \
+            const notification = document.createElement('div');\
+            notification.textContent = message;\
+            notification.style.position = 'fixed';\
+            notification.style.bottom = '20px';\
+            notification.style.left = '50%';\
+            notification.style.transform = 'translateX(-50%)';\
+            notification.style.backgroundColor = 'var(--linen)';\
+            notification.style.color = 'var(--ink)';\
+            notification.style.border = '1px solid rgba(0,0,0,0.08)';\
+            notification.style.padding = '15px 25px';\
+            notification.style.maxWidth = '90%';\
+            notification.style.width = '500px';\
+            notification.style.textAlign = 'center';\
+            notification.style.zIndex = '1000';\
+            notification.style.fontSize = '1rem';\
+            notification.style.fontFamily = 'HandType, serif';\
+            notification.style.fontStyle = 'italic';\
+            notification.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';\
+            \
+            document.body.appendChild(notification);\
+            \
+            setTimeout(() => \{\
+                notification.style.opacity = '0';\
+                notification.style.transition = 'opacity 0.5s ease';\
+                setTimeout(() => \{\
+                    document.body.removeChild(notification);\
+                \}, 500);\
+            \}, 4000);\
+        \});\
+    </script>\
+</body>\
+</html>}
