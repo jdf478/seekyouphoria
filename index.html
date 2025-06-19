@@ -7,30 +7,43 @@
   <meta name="description" content="You‑Phoria: A sanctuary where every scar becomes a testament of strength and science.">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle noise overlay */
+    .bg-noise {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity="0.02"><rect width="100" height="100" fill="black"/></svg>');
+    }
+    /* Fade-in-up animation */
+    @keyframes fadeInUp {0% {opacity: 0; transform: translateY(20px);} 100% {opacity: 1; transform: translateY(0);} }
+    .animate-fade-in { animation: fadeInUp 1.2s ease-out both; }
+    /* Slow pulse for heading glow */
+    @keyframes pulseSlow {0%,100% {opacity: 1;} 50% {opacity: 0.85;} }
+    .animate-pulse-slow { animation: pulseSlow 4s ease-in-out infinite; }
+  </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-indigo-900 to-indigo-800 text-gray-100 flex flex-col">
+<body class="relative min-h-screen bg-fixed bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-800 text-gray-100 font-sans overflow-x-hidden">
+  <!-- Noise Overlay -->
+  <div class="absolute inset-0 bg-noise pointer-events-none"></div>
+
   <!-- Hero -->
-  <section class="flex-grow flex items-center justify-center text-center px-8 py-24">
-    <div class="max-w-2xl space-y-6">
-      <h1 class="text-6xl md:text-7xl font-bold text-amber-200 leading-tight">You‑Phoria</h1>
-      <p class="text-xl text-gray-300">A sanctuary where every scar becomes a testament of strength and science.</p>
-      <a href="#services" class="inline-block mt-4 px-8 py-4 bg-amber-500 text-slate-900 font-semibold rounded-lg shadow-lg hover:bg-amber-400 transition">Discover the Philosophy</a>
-    </div>
+  <section class="flex flex-col items-center justify-center text-center px-8 py-32 space-y-6">
+    <h1 class="text-6xl md:text-7xl font-serif text-amber-300 drop-shadow-xl animate-pulse-slow">You‑Phoria</h1>
+    <p class="text-xl md:text-2xl text-gray-300 max-w-2xl animate-fade-in">A sanctuary where every scar becomes a testament of strength and science.</p>
+    <a href="#services" class="inline-block mt-4 px-10 py-4 bg-amber-500 text-slate-900 font-semibold rounded-lg shadow-lg hover:bg-amber-400 transition animate-fade-in">Discover the Philosophy</a>
   </section>
 
   <!-- Services -->
-  <section id="services" class="py-24 bg-gradient-to-b from-indigo-800 to-indigo-700">
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
-      <div class="bg-indigo-900 bg-opacity-50 rounded-xl p-8 space-y-4 border border-amber-400">
-        <h3 class="text-2xl font-semibold text-amber-300">Metabolic Repair</h3>
+  <section id="services" class="py-32 space-y-16 px-8">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border border-amber-400 transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-amber-200 drop-shadow">Metabolic Repair</h3>
         <p class="text-gray-300 leading-relaxed">Crafted metabolic journeys merging clinical precision with holistic renewal.</p>
       </div>
-      <div class="bg-indigo-900 bg-opacity-50 rounded-xl p-8 space-y-4 border border-amber-400">
-        <h3 class="text-2xl font-semibold text-amber-300">Gender Harmony</h3>
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border border-amber-400 transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-amber-200 drop-shadow">Gender Harmony</h3>
         <p class="text-gray-300 leading-relaxed">Trauma-informed hormone care, paced by you, supported by evidence.</p>
       </div>
-      <div class="bg-indigo-900 bg-opacity-50 rounded-xl p-8 space-y-4 border border-amber-400">
-        <h3 class="text-2xl font-semibold text-amber-300">Facial Harmony</h3>
+      <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-10 space-y-4 border border-amber-400 transform hover:scale-105 transition ease-out animate-fade-in">
+        <h3 class="text-3xl font-serif text-amber-200 drop-shadow">Facial Harmony</h3>
         <p class="text-gray-300 leading-relaxed">Precision esthetic rituals that empower identity and community.</p>
       </div>
     </div>
